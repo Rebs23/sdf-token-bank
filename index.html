@@ -1,28 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>SDF Token Bank | Fuel for Agents</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        body { background: #020617; color: white; font-family: sans-serif; }
-        .token-glow { text-shadow: 0 0 10px #60a5fa; }
+        body { background: #020617; color: white; font-family: 'Space Grotesk', sans-serif; }
+        .token-glow { text-shadow: 0 0 15px #60a5fa; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
     </style>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen">
-    <h1 class="text-6xl font-bold mb-4 token-glow tracking-tighter">SDF TOKEN BANK</h1>
-    <p class="text-xl text-blue-400 mb-12 uppercase tracking-[0.5em]">The Agentic Mint</p>
+<body class="flex flex-col items-center justify-center min-h-screen p-6">
+    <div class="inline-block glass px-4 py-1 rounded-full text-xs font-mono text-blue-400 mb-6 border-blue-500/30 uppercase tracking-widest">
+        Official Mint Node: Sonora-01
+    </div>
+    <h1 class="text-6xl md:text-8xl font-bold mb-4 token-glow tracking-tighter text-center">SDF TOKEN BANK</h1>
+    <p class="text-xl text-blue-400 mb-12 uppercase tracking-[0.5em] text-center">The Global Agentic Mint</p>
     
-    <div class="bg-slate-900 p-12 rounded-[3rem] border border-blue-500/20 text-center max-w-lg">
-        <h2 class="text-3xl font-bold mb-6">1,000,000 CREDITS</h2>
-        <p class="text-gray-500 mb-8">Fuel your AI Agents with high-velocity SDF tokens.</p>
-        <div class="text-5xl font-bold mb-10">$50 USD</div>
-        <a href="https://buy.stripe.com/6oU3cwd79cTqetQ6w80ZW00" class="block bg-blue-600 hover:bg-blue-500 px-12 py-5 rounded-2xl font-bold text-xl transition">
-            Buy Credits
+    <div class="glass p-12 rounded-[3rem] border-blue-500/20 text-center max-w-lg w-full">
+        <h2 class="text-3xl font-bold mb-6 text-white uppercase">Explorer Pack</h2>
+        <p class="text-gray-400 mb-8 text-lg">Fuel your AI Agents with 1,000,000 high-velocity SDF tokens.</p>
+        <div class="text-6xl font-bold mb-10 text-gradient bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">$10 USD</div>
+        
+        <!-- Link de Stripe (Debemos crear un producto de $10 en Stripe para ser 100% Amazing) -->
+        <a href="https://buy.stripe.com/6oU3cwd79cTqetQ6w80ZW00" class="block bg-blue-600 hover:bg-blue-500 px-12 py-5 rounded-2xl font-bold text-xl transition shadow-xl hover:shadow-blue-500/20">
+            Mint Tokens Now
         </a>
+        
+        <div class="mt-8 text-xs text-gray-500 flex justify-between uppercase tracking-widest">
+            <span>Latency: 45ms</span>
+            <span>Security: SHARE v1.1</span>
+        </div>
     </div>
     
-    <p class="mt-12 text-xs text-gray-700 font-mono">Issued by Software Dark Factory | Mission Node Sonora</p>
+    <footer class="mt-20 text-center">
+        <div class="text-xs text-gray-700 font-mono">Issued by Software Dark Factory | Global Settlement Network © 2026</div>
+    </footer>
 </body>
 </html>
